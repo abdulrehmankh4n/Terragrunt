@@ -22,4 +22,5 @@ inputs = {
   eip_id = dependency.eip.outputs.eip_id
   subnet_id = dependency.public-subnets.outputs.public_subnets[0]
   name = "eks-demo-nat-gw"
+  tags = {}
 }
