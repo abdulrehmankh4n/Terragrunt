@@ -24,7 +24,7 @@ inputs = {
       routes = [
         {
           cidr_block = "0.0.0.0/0"
-          igw_id     = dependency.nat-gw.outputs.nat_gw_id
+          nat_gateway_id     = dependency.nat-gw.outputs.nat_gw_id
         }
       ]
 
