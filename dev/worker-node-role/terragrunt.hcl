@@ -51,7 +51,7 @@ inputs = {
         "ec2:UnassignPrivateIpAddresses",
       ],
       resources = ["*"]
-    }
+    },
 
     {
       sid = "AmazonEKSCNIPolicyENITag",
