@@ -27,7 +27,7 @@ inputs = {
       vpc_id = dependency.vpc.outputs.vpc_id
       egress = [
         {
-          protocol   = "-1"
+          protocol   = "tcp"
           rule_no    = 100
           action     = "allow"
           cidr_block = "0.0.0.0/0"
