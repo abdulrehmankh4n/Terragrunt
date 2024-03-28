@@ -34,6 +34,6 @@ inputs = {
   keypair_name = ""
   use_userdata = true
   userdata_script_path = "user-data.sh"
-  user_data_replace_on_change = false
+  user_data_replace_on_change = true
   extra_tags = {}
 }

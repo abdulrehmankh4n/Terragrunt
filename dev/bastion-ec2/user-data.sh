@@ -29,7 +29,7 @@ sudo mv kubectl /usr/local/bin/
 export PATH=/usr/local/bin:$PATH 
 
 # Check kubectl version
-kubectl version —client
+kubectl version -—client
 
 # Installing kubectl bash completion on Linux
 ## If bash-completion is not installed on Linux, install the 'bash-completion' package
