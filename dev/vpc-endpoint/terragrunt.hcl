@@ -21,28 +21,21 @@ inputs = {
       service_name = "com.amazonaws.us-east-1.ssm"
       vpc_endpoint_type = "Interface"
       security_group_ids = [dependency.security-group.outputs.security_group_id]
-      private_dns_enabled = false
+      private_dns_enabled = true
     },
 
     {
       service_name = "com.amazonaws.us-east-1.ec2messages"
       vpc_endpoint_type = "Interface"
       security_group_ids = [dependency.security-group.outputs.security_group_id]
-      private_dns_enabled = false
-    },
-
-    {
-      service_name = "com.amazonaws.us-east-1.ec2"
-      vpc_endpoint_type = "Interface"
-      security_group_ids = [dependency.security-group.outputs.security_group_id]
-      private_dns_enabled = false
+      private_dns_enabled = true
     },
 
     {
       service_name = "com.amazonaws.us-east-1.ssmmessages"
       vpc_endpoint_type = "Interface"
       security_group_ids = [dependency.security-group.outputs.security_group_id]
-      private_dns_enabled = false
+      private_dns_enabled = true
     }
   ]
 }
