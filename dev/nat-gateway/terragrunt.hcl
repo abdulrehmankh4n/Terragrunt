@@ -6,10 +6,6 @@ terraform {
   source = "git@github.com:gozem-test/nat-gateway.git"
 }
 
-dependency "internet-gateway" {
-  config_path = "../internet-gateway"
-}
-
 dependency "eip" {
   config_path = "../nat-gw-eip"
 }
