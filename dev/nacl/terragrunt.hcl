@@ -340,8 +340,8 @@ inputs = {
           rule_no  = 300
           action   = "allow"
           cidr_block = "10.0.0.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         }
       ]
       ingress = [
@@ -404,8 +404,8 @@ inputs = {
           rule_no  = 300
           action   = "allow"
           cidr_block = "10.0.0.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         }
       ]
       ingress = [
