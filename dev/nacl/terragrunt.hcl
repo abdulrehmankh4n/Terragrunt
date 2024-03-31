@@ -310,6 +310,98 @@ inputs = {
       ]
       subnet_id = dependency.private-subnets.outputs.private_subnets[1]
       tags      = {}
+    },
+
+    # RDS NACL A
+    {
+      name   = "eks-demo-rds-nacl-a"
+      vpc_id = dependency.vpc.outputs.vpc_id
+      egress = [
+        {
+          protocol = "tcp"
+          rule_no  = 100
+          action   = "allow"
+          cidr_block = "10.0.100.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 200
+          action   = "allow"
+          cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        }
+      ]
+      ingress = [
+        {
+          protocol = "tcp"
+          rule_no  = 100
+          action   = "allow"
+          cidr_block = "10.0.100.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 200
+          action   = "allow"
+          cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        }
+      ]
+      subnet_id = dependency.private-subnets.outputs.private_subnets[1]
+      tags      = {}
+    },
+
+    # App NACL B
+    {
+      name   = "eks-demo-rds-nacl-b"
+      vpc_id = dependency.vpc.outputs.vpc_id
+      egress = [
+        {
+          protocol = "tcp"
+          rule_no  = 100
+          action   = "allow"
+          cidr_block = "10.0.100.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 200
+          action   = "allow"
+          cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        }
+      ]
+      ingress = [
+        {
+          protocol = "tcp"
+          rule_no  = 100
+          action   = "allow"
+          cidr_block = "10.0.100.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 200
+          action   = "allow"
+          cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        }
+      ]
+      subnet_id = dependency.private-subnets.outputs.private_subnets[2]
+      tags      = {}
     }
   ]
 }
