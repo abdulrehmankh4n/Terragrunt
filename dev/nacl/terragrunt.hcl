@@ -354,7 +354,7 @@ inputs = {
           to_port   = 5432
         }
       ]
-      subnet_id = dependency.private-subnets.outputs.private_subnets[1]
+      subnet_id = dependency.private-subnets.outputs.private_subnets[2]
       tags      = {}
     },
 
@@ -400,7 +400,7 @@ inputs = {
           to_port   = 5432
         }
       ]
-      subnet_id = dependency.private-subnets.outputs.private_subnets[2]
+      subnet_id = dependency.private-subnets.outputs.private_subnets[3]
       tags      = {}
     }
   ]
