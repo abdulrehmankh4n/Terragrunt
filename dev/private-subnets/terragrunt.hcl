@@ -43,7 +43,7 @@ inputs = {
     {
       name                                = "eks-demo-data-subnet-a"
       vpc_id                              = dependency.vpc.outputs.vpc_id
-      cidr_block                          = "10.0.300.0/24"
+      cidr_block                          = "10.0.10.0/24"
       availability_zone                   = "us-east-1a"
       map_public_ip_on_launch             = false
       private_dns_hostname_type_on_launch = "resource-name"
@@ -55,7 +55,7 @@ inputs = {
     {
       name                                = "eks-demo-data-subnet-b"
       vpc_id                              = dependency.vpc.outputs.vpc_id
-      cidr_block                          = "10.0.400.0/24"
+      cidr_block                          = "10.0.20.0/24"
       availability_zone                   = "us-east-1b"
       map_public_ip_on_launch             = false
       private_dns_hostname_type_on_launch = "resource-name"
