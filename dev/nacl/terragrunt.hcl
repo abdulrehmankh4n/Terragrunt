@@ -333,6 +333,15 @@ inputs = {
           cidr_block = "10.0.200.0/24"
           from_port = 5432
           to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 300
+          action   = "allow"
+          cidr_block = "10.0.0.0/24"
+          from_port = 5432
+          to_port   = 5432
         }
       ]
       ingress = [
@@ -350,6 +359,15 @@ inputs = {
           rule_no  = 200
           action   = "allow"
           cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 300
+          action   = "allow"
+          cidr_block = "10.0.0.0/24"
           from_port = 5432
           to_port   = 5432
         }
@@ -379,6 +397,15 @@ inputs = {
           cidr_block = "10.0.200.0/24"
           from_port = 5432
           to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 300
+          action   = "allow"
+          cidr_block = "10.0.0.0/24"
+          from_port = 5432
+          to_port   = 5432
         }
       ]
       ingress = [
@@ -396,6 +423,15 @@ inputs = {
           rule_no  = 200
           action   = "allow"
           cidr_block = "10.0.200.0/24"
+          from_port = 5432
+          to_port   = 5432
+        },
+
+        {
+          protocol = "tcp"
+          rule_no  = 300
+          action   = "allow"
+          cidr_block = "10.0.0.0/24"
           from_port = 5432
           to_port   = 5432
         }
