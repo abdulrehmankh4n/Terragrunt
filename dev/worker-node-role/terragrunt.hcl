@@ -26,9 +26,6 @@ inputs = {
     },
     {
       arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
-    },
-    {
-      arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
     }
   ]
   policy_statements = []

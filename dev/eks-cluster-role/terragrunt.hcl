@@ -17,6 +17,9 @@ inputs = {
   policy_attachments = [
     {
       arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+    },
+    {
+      arn = "arn:aws:iam::aws:policy/AmazonEKSVPCResourceController"
     }
   ]
   policy_statements = []
