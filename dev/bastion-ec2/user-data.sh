@@ -46,7 +46,7 @@ echo 'source <(kubectl completion bash)' >> ~/.bash_profile
 
 # Set bash completion for kubectl alias (k)
 echo 'alias k=kubectl' >> ~/.bashrc
-echo 'complete -F __start_kubectl k' >> ~/.bashrc
+# echo 'complete -F __start_kubectl k' >> ~/.bashrc
 
 # Get platform
 ARCH=amd64
