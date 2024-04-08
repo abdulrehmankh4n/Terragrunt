@@ -10,6 +10,10 @@ dependency "cluster" {
   config_path = "../eks-cluster"
 }
 
+dependency "node-group" {
+  config_path = "../eks-node-group"
+}
+
 inputs = {
   cluster_name = dependency.cluster.outputs.name
   addons = [
