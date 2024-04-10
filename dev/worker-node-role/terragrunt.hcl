@@ -18,9 +18,9 @@ inputs = {
     {
       arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
     },
-    // {
-    //   arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
-    // },
+    {
+      arn = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
+    },
     {
       arn = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
     },

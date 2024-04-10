@@ -15,7 +15,7 @@ inputs = {
   addons = [
     {
       name = "vpc-cni"
-      version = "v1.17.1-eksbuild.1"
+      version = "v1.18.0-eksbuild.1"
     },
     {
       name = "coredns"
