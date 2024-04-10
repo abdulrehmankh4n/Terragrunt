@@ -13,10 +13,10 @@ dependency "cluster" {
 inputs = {
   cluster_name = dependency.cluster.outputs.name
   addons = [
-    // {
-    //   name = "vpc-cni"
-    //   version = "v1.18.0-eksbuild.1"
-    // },
+    {
+      name = "vpc-cni"
+      version = "v1.18.0-eksbuild.1"
+    },
     {
       name = "coredns"
       version = "v1.11.1-eksbuild.6"
