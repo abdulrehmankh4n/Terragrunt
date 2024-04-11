@@ -322,8 +322,8 @@ inputs = {
           rule_no  = 100
           action   = "allow"
           cidr_block = "10.0.100.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         },
 
         {
@@ -331,8 +331,8 @@ inputs = {
           rule_no  = 200
           action   = "allow"
           cidr_block = "10.0.200.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         },
 
         {
@@ -386,8 +386,8 @@ inputs = {
           rule_no  = 100
           action   = "allow"
           cidr_block = "10.0.100.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         },
 
         {
@@ -395,8 +395,8 @@ inputs = {
           rule_no  = 200
           action   = "allow"
           cidr_block = "10.0.200.0/24"
-          from_port = 5432
-          to_port   = 5432
+          from_port = 1024
+          to_port   = 65535
         },
 
         {
